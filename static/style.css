@@ -1,0 +1,86 @@
+/* Background with shimmer effect */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(
+        120deg,
+        #001f3f,
+        #004d40,
+        #001f3f
+    );
+    background-size: 200% 200%;
+    animation: shimmer 6s ease-in-out infinite;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container styling */
+.container {
+    max-width: 700px;
+    margin: 5% auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 127, 0.2); /* Emerald glow */
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+/* Heading */
+h1 {
+    color: #2ecc71; /* Emerald Green */
+    margin-bottom: 20px;
+}
+
+/* Input field */
+form input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 6px;
+    border: 1px solid #2ecc71;
+    font-size: 16px;
+    background-color: #ffffffcc;
+    color: #001f3f;
+}
+
+/* Button */
+form button {
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Emerald */
+    color: #001f3f; /* Navy Text */
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #27ae60;
+}
+
+/* Error message */
+.error {
+    color: #ff6b6b;
+    margin-top: 10px;
+}
+
+/* Image */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 255, 127, 0.4); /* Emerald shadow */
+}

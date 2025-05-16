@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ ticker }} Prediction - Admin: Karthik</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ ticker }} Stock Price Prediction</h1>
+        <img src="{{ url_for('static', filename='plot.png') }}" alt="Stock prediction chart">
+        <br><br>
+        <a href="/">&#8592; Predict Another</a>
+    </div>
+</body>
+</html>
